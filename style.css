@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+body{
+    background-color: brown;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: 100px 540px 100px;
+    grid-template-areas: "cabecalho cabecalho bground bground bground"
+                         "conteudo conteudo bground bground bground"
+                         "rodape rodape bground bground bground";
+}
+
+.container-dois {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: 100px 540px 100px ;
+    grid-template-areas: "bground cabecalho cabecalho cabecalho separacao"
+                         "bground conteudo conteudo conteudo separacao"
+                         "bground rodape rodape rodape separacao";
+}
+
+.cabecalho {
+    background-color: green; 
+    grid-area: cabecalho;
+    width: 100%;
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h4{
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+    border: 0px;
+    border-radius: 10px;
+    padding: 20px 50px;
+    margin-left: 5px;
+}
+
+.conteudo {
+    background-color: blue;
+    grid-area: conteudo;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: -10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+li {
+    margin-top: 25px;
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    margin-right: 15px;
+    border: none;
+    background-color: azure;
+    padding: 15px 15px;
+    border-radius: 30px;
+    width: 20rem;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    border: none;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 20px;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.titulo-pagina, .titulo-dois-pagina{
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+
+.titulo-pagina{
+    font-weight: 5;
+    font-size: 80px;
+}
+
+.titulo-dois-pagina{
+    font-weight: 0;
+    font-size: 63px;
+}
+
+.rodape {
+    background-color: red;
+    grid-area: rodape;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+}
+
+h5 {
+    font-size: 24;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+img{
+    padding: 0px 2px;
+}
+
+.elemento{
+    margin: -35px;
+}
+
+.instagram {
+    margin-right:20px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.whatsapp {
+    margin-left: 20px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estiliza o rodapé da página */
+.after::after {
+    content: "|";
+    margin: 0 .3125rem;
+  }
+
+  /* Estiliza o rodapé da página */
+.rodape::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    /*margin-top: 10px;*/
+  }
+
+.bground {
+    background-color: yellow;
+    grid-area: bground;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.separacao {
+    background-color: rgb(255, 0, 162);
+    grid-area: separacao;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
