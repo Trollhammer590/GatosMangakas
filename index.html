@@ -19,28 +19,33 @@
                     <h1 class="titulo-pagina title"> Gatos </h1>
                     <h1 class="titulo-dois-pagina title"> Mangakás </h1>
                 </section>
-                <li><input type="text" placeholder="Pesquisar Artista">
-                    <span class="material-symbols-outlined" onclick="window.location.href='gatos.html';">search</span></li>
+                <li><input type="text" placeholder="Pesquisar Artista" id="campo-pesquisa">
+                    <span class="material-symbols-outlined" onclick="pesquisar()">search</span></li>
         </div>
 
         <div class="bground">
-                <img class="gato" src="img/gato.png" >
+                <img class="gato" src="img/gato.png" id="backg" >
+                <section class="resultados-pesquisa" id="resultados-pesquisa">
+
+                </section>
         </div>
 
         <div class="rodape">
                 <li class="elemento">
                     <section class="instagram">
-                        <img class="img" src="https://cdn.icon-icons.com/icons2/2389/PNG/512/instagram_logo_icon_145167.png" width="15" height="15"><h5>Instagram</h5> 
+                        <img class="img" src="https://cdn.icon-icons.com/icons2/2389/PNG/512/instagram_logo_icon_145167.png" width="15" height="15"><h5><a href="https://www.instagram.com/trollhammer590/">Instagram</a></h5> 
                     </section>
 
                                     <section class="after"></section>
 
                     <section class="whatsapp">
-                        <img class="img" src="https://static-00.iconduck.com/assets.00/whatsapp-icon-495x512-y1nyb5ge.png" width="15" height="15"><h5>Whatsapp</h5>
+                        <img class="img" src="https://static-00.iconduck.com/assets.00/whatsapp-icon-495x512-y1nyb5ge.png" width="15" height="15"><a src="index.html"></a><h5>Whatsapp</h5></a>
                     </section>
                 </li>
                     <h5>© 2024 Gatos Mangás. Todos os Direitos Reservados.</h5>
         </div>
     </div>
-</body>
+</body> 
+        <script src="dados.js"></script>
+        <script src="app.js"></script>
 </html>
