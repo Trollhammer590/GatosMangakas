@@ -261,3 +261,6 @@ h5 {
     cursor: url('img/cursor2.png'),pointer;
 }
 
+a{
+    text-decoration: none;
+}

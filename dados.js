@@ -12,7 +12,7 @@ let dados = [{
 },
 {
     mangaka: "Gege Ukutani",
-    img: "img/gege.png",
+    img: "img/Gege.png",
     descricao: "Gege Akutami é o pseudônimo do criador do popular mangá e anime Jujutsu Kaisen. Apesar do enorme sucesso de sua obra, muito pouco se sabe sobre o autor. Essa aura de mistério em torno de sua identidade tem intrigado os fãs.",
     tag: "Jujutsu Itadori Gojo"
 },
