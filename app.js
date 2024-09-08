@@ -12,7 +12,7 @@ function pesquisar(){
     let descricao=""
     let tag=""
 
-    if(campoPesquisa == ""){
+    if(campoPesquisa == "" || !resultados){
         section.innerHTML = `<li class="resultados-pesquisa-list"><h4>Nenhum gato encontrado :(</h4></li>`;
         if (backg != null){
             backg.remove();
