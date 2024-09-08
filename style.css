@@ -50,7 +50,7 @@ h4{
     color: rgb(73, 33, 33);
 }
 
-.conteudo {
+.conteudo{
     /* background-color: blue; */
     grid-area: conteudo;
     flex-direction: column;
@@ -99,6 +99,12 @@ input {
         'wght' 400,
         'GRAD' 0,
         'opsz' 24
+}
+
+.material-symbols-outlined:hover {
+    background-color: rgb(235, 214, 190);
+    color: rgb(33, 15, 15);;
+    cursor: pointer;
 }
 
 .titulo-pagina, .titulo-dois-pagina{
@@ -216,22 +222,33 @@ h5 {
 }
 
 .conteudo-gato{
-    width: 300px;
-    height: 200px;
+    /*background-color: blue; */
+    height: 100%;
+    grid-area: conteudo;
+    flex-direction: column;
+    display: flex; 
+  flex-wrap: wrap;
 }
 
+
+
 .gato-div{
-    width: 150px;
-    height: 150px;
+    max-width: 100%;
     display: flex;
     grid-template-columns: 1fr 1fr;  
 }
 
 .lii{
-    margin-top: 25px;
-    list-style-type: none;
-    align-items: center;
-    display: flex;
+    /*max-width: 180px;*/
+    max-width: wrap;
+    margin-top: 25px;    list-style-type: none;
     flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.cabecalho h4:hover{
+    background-color: rgb(235, 214, 190);
+    color: rgb(33, 15, 15);;
+    cursor: pointer;
+}
