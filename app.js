@@ -2,42 +2,53 @@ console.log (dados)
 
 function pesquisar(){
     let section = document.getElementById("resultados-pesquisa");
-
     let backg = document.getElementById("backg");
-    let resultados = "";
-    let campoPesquisa = document.getElementById("campo-pesquisa").value;
-        campoPesquisa = campoPesquisa.toLowerCase();
+    let resultados = "";  
+    let campoPesquisa = document.getElementById("campo-pesquisa").value.toLowerCase();  
+    let encontrouResultado = false;  
 
-    let mangaka= ""
-    let descricao=""
-    let tag=""
-
-    if(campoPesquisa == "" || !resultados){
-        section.innerHTML = `<li class="resultados-pesquisa-list"><h4>Nenhum gato encontrado :(</h4></li>`;
-        if (backg != null){
-            backg.remove();
+   
+    if (campoPesquisa === "") {
+        if (backg != null) {
+            backg.remove();  
         }
-        return;
+        section.innerHTML = `<li class="resultados-pesquisa-list"><h4>Nenhum gato encontrado :(</h4></li>`;
+        return;  
     }
 
-for (let dado of dados){
-            mangaka = dado.mangaka.toLocaleLowerCase();
-            descricao = dado.descricao.toLocaleLowerCase();
-            tag = dado.tag.toLocaleLowerCase()
-    if(mangaka.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tag.includes(campoPesquisa)){
-                        if (backg != null){
-                            backg.remove();
-                        }
-    resultados += `
+   
+    for (let dado of dados) {
+        let mangaka = dado.mangaka.toLowerCase();
+        let descricao = dado.descricao.toLowerCase();
+        let tag = dado.tag.toLowerCase();
+
+       
+        if (mangaka.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tag.includes(campoPesquisa)) {
+            encontrouResultado = true; 
+            if (backg != null) {
+                backg.remove();  
+            }
+
+          
+            resultados += `
                 <li class="resultados-pesquisa-list">
                     <h4> ${dado.mangaka} </h4>
                     <img class="imagem-pesquisa" src="${dado.img}" style="width: 400px; height: 400px; ">
                     <h4>${dado.descricao}</h4>
                 </li>
-    `}
-}
-    section.innerHTML = resultados;
+            `;
+        }
+    }
 
+   
+    if (!encontrouResultado) {
+        resultados = `<li class="resultados-pesquisa-list"><h4>Nenhum gato encontrado :(</h4></li>`;
+    }
+
+   
+    section.innerHTML = resultados;
+    
+    backg.remove();
 }
 
 function carregar(){

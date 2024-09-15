@@ -8,7 +8,7 @@ let dados = [{
     mangaka: "Asano Inio",
     img: "img/inio.png",
     descricao: "Inio Asano é um mangaká japonês conhecido por suas obras que retratam de forma realista e profunda a vida e os dramas dos jovens. Seus mangás, como Solanin e Boa Noite Punpun, são aclamados por abordar temas como amadurecimento, relacionamentos, angústia e a busca por um lugar no mundo.",
-    tag: "Punpun Aiko"
+    tag: "Punpun Aiko Asano"
 },
 {
     mangaka: "Gege Ukutani",
