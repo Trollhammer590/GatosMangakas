@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/icon.png">
+    <title>Gatos Mangakás</title>
+</head>
+
+<body onload="configuracao()">
+
+    <div class="container">
+        <header id="header"></header>
+
+        <nav class="conteudo">
+                <section class="main">
+                    <h1 class="titulo-pagina title"> Gatos </h1>
+                    <h1 class="titulo-dois-pagina title"> Mangakás </h1>
+                </section>
+                <li>
+                    <input type="text" placeholder="Pesquiar artista ou obra (Ex.: Miura)" id="campo-pesquisa" >
+                    <span class="material-symbols-outlined" onclick="pesquisar()">search</span>
+                </li>
+        </nav>
+
+        <main class="bground">
+                <img class="gato" src="../img/gato.png" id="backg">
+                <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+        </main>
+
+        <footer id="rodape"></footer>
+    </div>
+
+</body> 
+
+        <script src="../scripts/dados.js"></script>
+        <script src="../scripts/app.js"></script>
+
+</html>

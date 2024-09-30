@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/* Estilização da página */
+body{
+    margin: 0;
+    padding: 0;
+    cursor: url('../img/cursor.png'),auto;
+    background: url('../img/sitegatos.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    position: relative;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px 540px 100px ;
+    grid-template-areas: "bground cabecalho separacao"
+                         "bground conteudo separacao"
+                         "bground rodape separacao";
+}
+
+.nav-esquerda {
+    /*background-color: #ffff00; */
+    height: 100%;
+    grid-area: bground;
+    align-items: end;
+    justify-content: end;
+}
+
+.nav-direita {
+    /*background-color: #ff00a2;*/
+    height: 100%;
+    grid-area: separacao;
+    align-items: end;
+    justify-content: end;
+}
+
+.header {
+    /*background-color: #008000;*/
+    grid-area: cabecalho;
+    width: 100%;
+}
+.conteudo{
+    /*background-color: #0000ff;*/
+    grid-area: conteudo;
+    display: grid;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.rodape {
+    /*background-color: red;*/
+    grid-area: rodape;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+/*Estilização do cabeçalho */
+
+.header h4:hover{
+    background-color: #ebd6be;
+    color: #210f0f;;
+    cursor: url('../img/cursor2.png'),pointer;
+}
+
+
+input {
+    margin-right: 15px;
+    border: none;
+    background-color: #faebd7;
+    padding: 15px 15px;
+    border-radius: 30px;
+    width: 20rem;
+    align-items: center;
+}
+
+/* Configuração da aplicação */
+
+.container-gato{
+    flex: 1 1 150px;
+    margin-top: 25px;    
+    list-style-type: none;
+    justify-content: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.gato{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+
+
+/* Estilização do Rodapé */
+
+.img {    
+    padding: 0px 2px;
+}
+
+.instagram {
+    margin-right:20px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.whatsapp {
+    margin-left: 20px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.after::after {
+    content: "|";
+    margin: 0 .3125rem;
+  }
+
+li {
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+}
+
+.rodape-config{
+        color: #492121;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+
+
+
+
+/* Estilização de fontes, botões e outros*/
+.header-config{
+    display: flex;
+    position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+    border: 0px;
+    border-radius: 20px;
+    padding: 20px 50px;
+    margin-left: 5px;
+    color: rgb(73, 33, 33);
+}
+
+.material-symbols-outlined {
+    border: none;
+    background-color: antiquewhite;
+    color: rgb(73, 33, 33);
+    padding: 10px;
+    border-radius: 20px;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.material-symbols-outlined:hover {
+    background-color: rgb(235, 214, 190);
+    color: rgb(33, 15, 15);
+    cursor: url('img/cursor2.png'),pointer;
+}
+
+a{
+    text-decoration: none;
+}
+h5{
+    
+    margin: 5px;
+}
